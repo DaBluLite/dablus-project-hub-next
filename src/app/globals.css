@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,25 +20,76 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+@theme {
+  --color-primary-50: #e7e9e9;
+  --color-primary-100: #d2d5d5;
+  --color-primary-200: #a3a8a8;
+  --color-primary-300: #777e7e;
+  --color-primary-400: #4a4f4f;
+  --color-primary-500: #202222;
+  --color-primary-600: #191a1a;
+  --color-primary-700: #141515;
+  --color-primary-800: #0c0d0d;
+  --color-primary-900: #070808;
+  --color-primary-950: #020303;
+  --color-bg-secondary: #1c1e21;
+  --color-tertiary-50: #ecedee;
+  --color-tertiary-100: #dcdde0;
+  --color-tertiary-200: #b8bbc1;
+  --color-tertiary-300: #9599a3;
+  --color-tertiary-400: #727883;
+  --color-tertiary-500: #53575f;
+  --color-tertiary-600: #323439;
+  --color-tertiary-700: #141517;
+  --color-tertiary-800: #0e0f10;
+  --color-tertiary-900: #070708;
+  --color-tertiary-950: #020203;
+  --color-accent-50: #dbfffa;
+  --color-accent-100: #b8fff4;
+  --color-accent-200: #70ffea;
+  --color-accent-300: #2effe0;
+  --color-accent-400: #00e6c3;
+  --color-accent-500: #009f88;
+  --color-accent-600: #00806c;
+  --color-accent-700: #006152;
+  --color-accent-800: #003d34;
+  --color-accent-900: #001f1a;
+  --color-accent-950: #000f0d;
+}
+
+@layer base {
+  a {
+    @apply rounded-sm transition text-white cursor-pointer py-1 px-4;
+  }
+  .accent-button {
+    text-decoration: none;
+    @apply bg-accent-500 hover:bg-accent-600
+  }
+  .primary-button {
+    text-decoration: none;
+    @apply bg-primary-500 hover:bg-primary-700
+  }
+}
+
+.react-colorful__last-control {
+	border-radius: 0 0 var(--radius-sm) var(--radius-sm) !important;
+}
+
+.react-colorful__saturation {
+	border-radius: var(--radius-sm) var(--radius-sm) 0 0 !important;
 }

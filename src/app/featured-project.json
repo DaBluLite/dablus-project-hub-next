@@ -1,0 +1,18 @@
+{
+    "image": "cyan2-screenshot-1.png",
+    "title": "Cyan 2",
+    "description": "Clean and Customizable, with custom background support",
+    "actions": [
+        {
+            "text": "Learn More",
+            "href": "/cyan",
+            "color": "accent-button",
+            "internal": true
+        },
+        {
+            "text": "Get it on BetterDiscord",
+            "href": "https://betterdiscord.app/theme/Cyan",
+            "color": "primary-button"
+        }
+    ]
+}

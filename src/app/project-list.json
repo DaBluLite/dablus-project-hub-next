@@ -1,0 +1,46 @@
+[
+    {
+        "image": "cyan2-screenshot-1.png",
+        "title": "Cyan 2",
+        "description": "Clean and Customizable, with custom background support",
+        "actions": [
+            {
+                "text": "Learn More",
+                "href": "/cyan",
+                "color": "accent-button",
+                "internal": true
+            },
+            {
+                "text": "Get it on BetterDiscord",
+                "href": "https://betterdiscord.app/theme/Cyan",
+                "color": "primary-button"
+            }
+        ]
+    },
+    {
+        "image": "project-colorway-banner.jpg",
+        "title": "Project Colorway",
+        "description": "Vastly colorful. Color-only presets for apps and websites, with the goal of a colorful internet.",
+        "actions": [
+            {
+                "text": "Learn More",
+                "href": "/colorways",
+                "color": "accent-button",
+                "internal": true
+            }
+        ]
+    },
+    {
+        "image": "nr-screenshot.png",
+        "title": "Nexus Remastered",
+        "description": "The theme that never came to be, and predecessor to Cyan, remastered and better than before",
+        "actions": [
+            {
+                "text": "Learn More",
+                "href": "/nexus",
+                "color": "accent-button",
+                "internal": true
+            }
+        ]
+    }
+]
