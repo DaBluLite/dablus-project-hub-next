@@ -16,7 +16,7 @@ export default function HamburgerMenu() {
                 </svg>
                 </div>
             </MenuHandler>
-            <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-2 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-800">
+            <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-2 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-800" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <Link href="/cyan" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">Cyan 2</Link>
                 <Link href="/nexus" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">Nexus Remastered</Link>
                 <Link href="/colorways" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">Project Colorway</Link>

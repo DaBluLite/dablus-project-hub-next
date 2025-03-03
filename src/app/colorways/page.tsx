@@ -29,9 +29,9 @@ export default function Home() {
                     <span>Project Colorway is a theming standard made for the masses, with the goal of a more seamless and vast theming experience, for a vastly colorful web.</span>
                     <h1 className="text-xl">How to contribute</h1>
                     <ul className="flex gap-2 flex-col pl-4">
-                        <li className="list-disc">Make colorways. Really, that is all it takes for you to support this project. Make colorways, upload them and share them. The goal of this porject is neither to spread my name nor this project's name. The goal is to create a universal way of theming apps in an easy and accessible manner.</li>
+                        <li className="list-disc">Make colorways. Really, that is all it takes for you to support this project. Make colorways, upload them and share them. The goal of this porject is neither to spread my name nor this project&apos;s name. The goal is to create a universal way of theming apps in an easy and accessible manner.</li>
                         <li className="list-disc">Use the tools provided by instances of Project Colorway. As of DiscordColorways v5.7.0 and Colorish v1, and exporting colorway sources is possible from inside the plugin/app itself. Submissions for colorway sources or colorways are open to anyone from <Link href="/colorways/submit" className="p-0 decoration-1 decoration-solid underline">here</Link>.</li>
-                        <li className="list-disc">Create Project Colorway-compatible apps. By properly following Project Colorway's specifications for apps and manager communication, you can help create a more seamless theming experience across apps.</li>
+                        <li className="list-disc">Create Project Colorway-compatible apps. By properly following Project Colorway&apos;s specifications for apps and manager communication, you can help create a more seamless theming experience across apps.</li>
                         <li className="list-disc">Support for online Project Colorway features for GitHub Desktop is being worked on...</li>
                     </ul>
                 </div>

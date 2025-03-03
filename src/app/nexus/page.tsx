@@ -29,7 +29,7 @@ export default function Home() {
                         <h1 className="text-2xl">Nexus Remastered</h1>
                         <a href="https://github.com/DaBluLite/NexusRemastered" target="_blank" className="accent-button">GitHub</a>
                     </div>
-                    <span>Nexus Remastered is the answer to "what could have been", had Nexus not become Cyan. It's a love letter to the theme that it all started from. Simple UI from across all 3 generations of Cyan, paired with a ton of features.</span>
+                    <span>Nexus Remastered is the answer to &quot;what could have been&quot;, had Nexus not become Cyan. It&apos;s a love letter to the theme that it all started from. Simple UI from across all 3 generations of Cyan, paired with a ton of features.</span>
                 </div>
             </div>
         </>

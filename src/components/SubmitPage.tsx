@@ -48,7 +48,7 @@ function Colorway() {
                         Accent
                     </div>
                 </MenuHandler>
-                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400">
+                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <HexColorPicker className="rounded-sm" color={accent} onChange={setAccent} />
                     <input type="text" onChange={(e) => setAccent(e.currentTarget.value)} value={accent} className="bg-primary-500 transition p-2 rounded-sm outline-none" />
                 </MenuList>
@@ -63,7 +63,7 @@ function Colorway() {
                         Primary
                     </div>
                 </MenuHandler>
-                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400">
+                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <HexColorPicker className="rounded-sm" color={primary} onChange={setPrimary} />
                     <input type="text" onChange={(e) => setPrimary(e.currentTarget.value)} value={primary} className="bg-primary-500 transition p-2 rounded-sm outline-none" />
                 </MenuList>
@@ -78,7 +78,7 @@ function Colorway() {
                         Secondary
                     </div>
                 </MenuHandler>
-                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400">
+                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <HexColorPicker className="rounded-sm" color={secondary} onChange={setSecondary} />
                     <input type="text" onChange={(e) => setSecondary(e.currentTarget.value)} value={secondary} className="bg-primary-500 transition p-2 rounded-sm outline-none" />
                 </MenuList>
@@ -93,7 +93,7 @@ function Colorway() {
                         Tertiary
                     </div>
                 </MenuHandler>
-                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400">
+                <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-4 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-400" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <HexColorPicker className="rounded-sm" color={tertiary} onChange={setTertiary} />
                     <input type="text" onChange={(e) => setTertiary(e.currentTarget.value)} value={tertiary} className="bg-primary-500 transition p-2 rounded-sm outline-none" />
                 </MenuList>
@@ -116,7 +116,7 @@ function Source() {
                     setFile(e.currentTarget.files[0]);
                 }
             }} />
-            <div className='bg-primary-700 hover:bg-primary-400 rounded-l-sm py-2 px-4 transition cursor-pointer' onClick={() => fileInput.current!.click()}>Select</div>
+            <div className='bg-primary-700 hover:bg-primary-400 rounded-l-sm py-2 px-4 transition cursor-pointer' onClick={() => (fileInput.current as unknown as HTMLInputElement).click()}>Select</div>
             <input type="text" readOnly value={file.name} placeholder='No file selected...' className='pl-2' />
         </div>
         <button className="rounded-sm accent-button py-1 cursor-pointer px-4 w-fit" type="submit">Submit Colorway</button>

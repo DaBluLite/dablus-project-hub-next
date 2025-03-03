@@ -14,7 +14,7 @@ export default async function UserAvatar() {
 
     return (
         <>
-            <img width={28} height={28} className="rounded-sm" src={session.user.image} alt="User Avatar" />
+            <img width={28} height={28} className="rounded-sm" src={session.user.image as string} alt="User Avatar" />
             <form
                 action={async () => {
                     "use server"
