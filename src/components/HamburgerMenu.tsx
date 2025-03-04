@@ -16,11 +16,12 @@ export default function HamburgerMenu() {
                 </svg>
                 </div>
             </MenuHandler>
-            <MenuList className="z-40 rounded-sm bg-primary-600 border-none w-fit p-2 flex flex-col gap-2 justify-items-stretch mt-2 ml-[-.5rem] shadow-primary-800" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <Link href="/cyan" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">Cyan 2</Link>
-                <Link href="/nexus" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">Nexus Remastered</Link>
-                <Link href="/colorways" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">Project Colorway</Link>
-                <Link href="/csssnippets" className="border-none outline-none hover:bg-primary-700 transition px-4 py-2 rounded-sm">CSS Snippets</Link>
+            <MenuList className="!fixed !left-0 !top-0 z-40 rounded-none h-full bg-primary-500 border-none p-2 flex flex-col gap-2 justify-items-stretch shadow-primary-800 w-full justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <Link href="/" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Home</Link>
+                <Link href="/cyan" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Cyan 2</Link>
+                <Link href="/nexus" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Nexus Remastered</Link>
+                <Link href="/colorways" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Project Colorway</Link>
+                <Link href="/csssnippets" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">CSS Snippets</Link>
             </MenuList>
         </Menu>
     );
