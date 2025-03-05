@@ -1,71 +1,42 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
-import markdownToHtml from "@/lib/markdownToHtml";
-import Alert from "@/app/_components/alert";
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
-import { PostBody } from "@/app/_components/post-body";
+import dynamic from "next/dynamic";
+import { getBlogPostMetadata } from "@/app/blog/_lib/getBlogPostData";
+import type { Metadata } from "next/types";
 import { PostHeader } from "@/app/_components/post-header";
+import Header from "@/app/_components/header";
+import markdownStyles from "@/app/_components/markdown-styles.module.css";
 
-export default async function Post(props: Params) {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    return notFound();
+export async function generateMetadata({
+  params,
+}: BlogPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const { metadata } = await getBlogPostMetadata(slug);
+  if (metadata) {
+    return {
+      ...metadata,
+      title: metadata.title + " | DaBlu's Blog"
+    };
+  } else {
+    throw new Error(`No metadata found for blog post: ${slug}`);
   }
+}
 
-  const content = await markdownToHtml(post.content || "");
+type BlogPageProps = { params: Promise<{ slug: string }> };
 
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { slug } = await params;
+  const { metadata } = await getBlogPostMetadata(slug);
+  const BlogMarkdown = dynamic(() => import("@/_posts/" + slug + ".mdx"));
   return (
-    <main>
-      <Container>
-        <Header />
-        <article className="mb-32">
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
-          <PostBody content={content} />
-        </article>
-      </Container>
-    </main>
+    <div className="container mx-auto p-4">
+      <Header />
+      <PostHeader title={metadata.title} coverImage={metadata.coverImage} date={metadata.date} author={metadata.author} />
+      <div className="max-w-2xl mx-auto">
+        <div
+          className={markdownStyles["markdown"]}
+        >
+          <BlogMarkdown />
+        </div>
+      </div>
+    </div>
   );
-}
-
-type Params = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
-export async function generateMetadata(props: Params): Promise<Metadata> {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    return notFound();
-  }
-
-  const title = `${post.title} | DaBlu's Blog`;
-
-  return {
-    title,
-    openGraph: {
-      title,
-      images: [post.ogImage.url],
-    },
-  };
-}
-
-export async function generateStaticParams() {
-  const posts = getAllPosts();
-
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
 }

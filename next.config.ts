@@ -1,4 +1,6 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+import rehypeHighlight from "rehype-highlight";
 
 const nextConfig: NextConfig = {
   images: {
@@ -20,9 +22,14 @@ const nextConfig: NextConfig = {
  
     return config
   },
-  experimental: {
-    serverComponentsExternalPackages: ['remark-prism']
-  }
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  serverExternalPackages: ['remark-prism']
 };
 
-export default nextConfig;
+const withMDX = createMDX({
+  options: {
+    rehypePlugins: [rehypeHighlight],
+  },
+});
+
+export default withMDX(nextConfig);

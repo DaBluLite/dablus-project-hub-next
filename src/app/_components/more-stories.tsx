@@ -1,8 +1,8 @@
-import { Post } from "@/interfaces/post";
 import { PostPreview } from "./post-preview";
+import { BlogPostData } from "../blog/_lib/getBlogPostData";
 
 type Props = {
-  posts: Post[];
+  posts: BlogPostData[];
 };
 
 export function MoreStories({ posts }: Props) {
@@ -15,12 +15,12 @@ export function MoreStories({ posts }: Props) {
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
+            title={post.metadata.title}
+            coverImage={post.metadata.coverImage}
+            date={post.metadata.date}
+            author={post.metadata.author}
             slug={post.slug}
-            excerpt={post.excerpt}
+            excerpt={post.metadata.excerpt}
           />
         ))}
       </div>
