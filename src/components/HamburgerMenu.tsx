@@ -22,6 +22,7 @@ export default function HamburgerMenu() {
                 <Link href="/nexus" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Nexus Remastered</Link>
                 <Link href="/colorways" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Project Colorway</Link>
                 <Link href="/csssnippets" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">CSS Snippets</Link>
+                <Link href="/blog" className="border-none outline-none hover:bg-primary-700 transition p-4 rounded-lg">Blog</Link>
             </MenuList>
         </Menu>
     );

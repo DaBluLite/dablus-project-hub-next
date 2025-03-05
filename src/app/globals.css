@@ -1,3 +1,4 @@
+@import "./prism-material-dark.min.css";
 @import 'tailwindcss';
 
 :root {
@@ -73,16 +74,13 @@ a {
 }
 
 @layer base {
-  a {
-    @apply rounded-sm transition text-white cursor-pointer py-1 px-4;
-  }
   .accent-button {
     text-decoration: none;
-    @apply bg-accent-500 hover:bg-accent-600
+    @apply bg-accent-500 hover:bg-accent-600 rounded-sm transition text-white cursor-pointer py-1 px-4;
   }
   .primary-button {
     text-decoration: none;
-    @apply bg-primary-500 hover:bg-primary-700
+    @apply bg-primary-500 hover:bg-primary-700 rounded-sm transition text-white cursor-pointer py-1 px-4;
   }
 }
 
@@ -92,4 +90,8 @@ a {
 
 .react-colorful__saturation {
 	border-radius: var(--radius-sm) var(--radius-sm) 0 0 !important;
+}
+
+.hljs {
+  @apply rounded-md
 }

@@ -20,6 +20,9 @@ const nextConfig: NextConfig = {
  
     return config
   },
+  experimental: {
+    serverComponentsExternalPackages: ['remark-prism']
+  }
 };
 
 export default nextConfig;

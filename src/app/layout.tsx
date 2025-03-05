@@ -63,6 +63,10 @@ export default function RootLayout({
                 </div>
                 <div className="group relative flex h-full flex-row items-center justify-center text-sm focus:outline-0">
                   <Link className="relative z-10 grid h-full place-content-center px-6 transition duration-100 focus:outline-none focus-visible:ring focus-visible:ring-cream-400 undefined" href="/csssnippets">CSS Snippets</Link>
+                  <div className="pointer-events-none -mx-px h-4 w-px transition-all duration-200 select-none bg-primary-600" />
+                </div>
+                <div className="group relative flex h-full flex-row items-center justify-center text-sm focus:outline-0">
+                  <Link className="relative z-10 grid h-full place-content-center px-6 transition duration-100 focus:outline-none focus-visible:ring focus-visible:ring-cream-400 undefined" href="/blog">Blog</Link>
                 </div>
               </div>
               <div className="flex gap-2 items-center ml-auto lg:ml-0">
