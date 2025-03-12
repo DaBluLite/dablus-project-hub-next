@@ -26,12 +26,11 @@ export async function submitColorway(formData: FormData) {
 
 
         wc.send({
-            content: userMention(session!.user!.image?.split("/")[4] as string),
+            content: userMention(session!.user!.id as string),
             embeds: [
                 {
                     color: (hexToRgb(accent as string)[0] << 16) + (hexToRgb(accent as string)[1] << 8) + hexToRgb(accent as string)[2],
-                    title: `Colorway Submission from ${session!.user!.name
-                        }`,
+                    title: `Colorway Submission from ${session!.user!.name} (@${session!.user!.email})`,
                     description: `
     Colorway Name: ${colorwayName}
     Accent: ${accent}
@@ -64,11 +63,10 @@ export async function submitSource(formData: FormData) {
         const colorways = JSON.parse(await fileStream?.text()).colorways.length;
 
         wc.send({
-            content: userMention(session!.user!.image?.split("/")[4] as string),
+            content: userMention(session!.user!.id as string),
             embeds: [
                 {
-                    title: `Colorway Submission from ${session!.user!.name
-                        }`,
+                    title: `Colorway Submission from ${session!.user!.name} (@${session!.user!.email})`,
                     description: `
         Name: ${name}
         Colorways: ${colorways || 0

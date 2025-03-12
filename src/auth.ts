@@ -8,8 +8,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       async profile(profile) {
         return {
           id: profile.id,
-          name: profile.username,
-          image: `https://cdn.discordapp.com/avatars/${profile.id}/${profile.avatar}.webp`
+          name: profile.global_name,
+          email: profile.username,
+          image: `https://cdn.discordapp.com/avatars/${profile.id}/${profile.avatar}.${profile.avatar.startsWith("a_") ? "gif" : "webp"}`
         };
       },
     })

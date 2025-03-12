@@ -24,6 +24,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  .modal {
+    @apply w-screen h-screen transition bg-primary-800/75 fixed top-0 left-0 z-50 flex items-center justify-center
+  }
 }
 
 a {
@@ -128,4 +135,12 @@ a {
 .hljs-selector-tag,
 .hljs-selector-pseudo {
   color: var(--color-teal-400, #15ece2);
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }

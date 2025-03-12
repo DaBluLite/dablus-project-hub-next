@@ -29,7 +29,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
   return (
     <div className="container mx-auto p-4">
       <Header />
-      <PostHeader title={metadata.title} coverImage={metadata.coverImage} date={metadata.date} author={metadata.author} />
+      <PostHeader slug={slug} title={metadata.title} coverImage={metadata.coverImage} date={metadata.date} author={metadata.author} />
       <div className="max-w-2xl mx-auto">
         <div
           className={markdownStyles["markdown"]}

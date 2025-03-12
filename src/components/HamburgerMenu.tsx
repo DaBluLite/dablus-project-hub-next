@@ -4,7 +4,7 @@ import {
     MenuHandler,
     MenuList
 } from "@material-tailwind/react";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export default function HamburgerMenu() {
     return (

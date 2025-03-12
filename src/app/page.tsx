@@ -2,7 +2,7 @@
 import Image from "next/image";
 import featuredProject from "./featured-project.json";
 import projects from "./project-list.json";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export default function Home() {
   return (
