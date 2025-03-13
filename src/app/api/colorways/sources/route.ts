@@ -30,7 +30,7 @@ export async function GET({ nextUrl: { searchParams } }: NextRequest) {
     if(searchParams.get("id") && _sources.sources.find(s => s.id === searchParams.get("id"))) {
         const res = await fetch(_sources.sources.find(s => s.id === searchParams.get("id"))?.url as string);
         const data = await res.json();
-        return NextResponse.json(data["colorways"], {
+        return new NextResponse(JSON.stringify(data["colorways"]), {
             headers: {
                 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
                 'Access-Control-Allow-Origin': '*',
@@ -38,7 +38,7 @@ export async function GET({ nextUrl: { searchParams } }: NextRequest) {
               }
         });
     } else if(searchParams.get("q")) {
-        return NextResponse.json({ sources: _sources.sources.filter(source => source.name.toLowerCase().includes(searchParams.get("q")?.toLowerCase() as string) || source.description.toLowerCase().includes(searchParams.get("q") as string)) }, {
+        return new NextResponse(JSON.stringify({ sources: _sources.sources.filter(source => source.name.toLowerCase().includes(searchParams.get("q")?.toLowerCase() as string) || source.description.toLowerCase().includes(searchParams.get("q") as string)) }), {
             headers: {
                 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
                 'Access-Control-Allow-Origin': '*',
@@ -46,7 +46,7 @@ export async function GET({ nextUrl: { searchParams } }: NextRequest) {
               }
         });
     } else {
-        return NextResponse.json(_sources, {
+        return new NextResponse(JSON.stringify(_sources), {
             headers: {
                 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
                 'Access-Control-Allow-Origin': '*',
