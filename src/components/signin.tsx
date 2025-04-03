@@ -8,7 +8,7 @@ export default function SignIn() {
         await signIn("discord")
       }}
     >
-      <button type="submit" className="rounded-sm bg-accent-500 hover:bg-accent-600 transition text-white cursor-pointer py-1 px-4">Login</button>
+      <button type="submit" className="button button-accent">Login</button>
     </form>
   )
 } 

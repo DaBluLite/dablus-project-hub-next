@@ -9,7 +9,7 @@ export default async function UserAvatar() {
             await signIn("discord")
         }}
     >
-        <button type="submit" className="rounded-sm bg-accent-500 hover:bg-accent-600 transition text-white cursor-pointer py-1 px-4">Login</button>
+        <button type="submit" className="button button-accent">Login</button>
     </form>
 
     return (
@@ -21,7 +21,7 @@ export default async function UserAvatar() {
                     await signOut()
                 }}
             >
-                <button type="submit" className="rounded-sm bg-primary-500 hover:bg-primary-700 transition text-white cursor-pointer py-1 px-4">Logout</button>
+                <button type="submit" className="button button-primary">Logout</button>
             </form>
         </>
     )

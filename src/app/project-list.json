@@ -7,13 +7,13 @@
             {
                 "text": "Learn More",
                 "href": "/cyan",
-                "color": "accent-button",
+                "color": "accent",
                 "internal": true
             },
             {
                 "text": "Get it on BetterDiscord",
                 "href": "https://betterdiscord.app/theme/Cyan",
-                "color": "primary-button"
+                "color": "primary"
             }
         ]
     },
@@ -25,7 +25,7 @@
             {
                 "text": "Learn More",
                 "href": "/colorways",
-                "color": "accent-button",
+                "color": "accent",
                 "internal": true
             }
         ]
@@ -38,7 +38,7 @@
             {
                 "text": "Learn More",
                 "href": "/nexus",
-                "color": "accent-button",
+                "color": "accent",
                 "internal": true
             }
         ]
