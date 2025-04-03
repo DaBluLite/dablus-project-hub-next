@@ -44,6 +44,5 @@
     "tailwindcss-view-transitions": "^0.1.1",
     "typescript": "^5",
     "zlib-sync": "^0.1.9"
-  },
-  "packageManager": "pnpm@10.7.0"
+  }
 }
