@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImageModal } from "@/components/ImageModal";
 
 export default function Home() {
     return (
@@ -12,7 +12,7 @@ export default function Home() {
                 beautiful frosted glass material, paired with massive amounts of customizability and an
                 extensive amount of addons to choose from.</span>
             <div className="grid grid-cols-2 gap-2 w-full">
-                <Image
+                <ImageModal
                     src={`/cyan2-screenshot-1.png`}
                     alt="Featured Project Screenshot"
                     width="720"
@@ -20,7 +20,7 @@ export default function Home() {
                     sizes="100vw"
                     className="w-full h-auto rounded-md"
                 />
-                <Image
+                <ImageModal
                     src={`/cyan2-screenshot-2.png`}
                     alt="Featured Project Screenshot"
                     width="720"

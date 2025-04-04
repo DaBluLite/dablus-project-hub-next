@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImageModal } from "@/components/ImageModal";
 
 export default function Home() {
     return (
@@ -24,7 +24,7 @@ export default function Home() {
                 </ul>
                 <h1 className="text-2xl">Screenshots (v2 Beta)</h1>
                 <div className="grid grid-cols-2 gap-2 w-full">
-                    <Image
+                    <ImageModal
                         src={`/manager/main-v2.png`}
                         alt="Colorish v2 Main Interface"
                         width="0"
@@ -32,7 +32,7 @@ export default function Home() {
                         sizes="100vw"
                         className="w-full h-auto rounded-md"
                     />
-                    <Image
+                    <ImageModal
                         src={`/manager/gs-v2.png`}
                         alt="Colorish v2 Global Search"
                         width="0"
@@ -40,7 +40,7 @@ export default function Home() {
                         sizes="100vw"
                         className="w-full h-auto rounded-md"
                     />
-                    <Image
+                    <ImageModal
                         src={`/manager/settings-v2.png`}
                         alt="Colorish v2 Settings"
                         width="0"
@@ -50,7 +50,7 @@ export default function Home() {
                     />
                 </div>
                 <h1 className="text-2xl">Screenshots (v1)</h1>
-                <Image
+                <ImageModal
                     src={`/manager/colorish.png`}
                     alt="Colorish v1 Main Interface"
                     width="0"

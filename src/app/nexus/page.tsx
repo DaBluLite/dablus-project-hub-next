@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImageModal } from "@/components/ImageModal";
 
 export default function Home() {
     return (
@@ -9,22 +9,22 @@ export default function Home() {
             </div>
             <span className="mb-4 text-pretty">Nexus Remastered is the answer to &quot;what could have been&quot;, had Nexus not become Cyan. It&apos;s a love letter to the theme that it all started from. Simple UI from across all 3 generations of Cyan, paired with a ton of features.</span>
             <div className="grid grid-cols-2 gap-2 w-full">
-                <Image
-                        src={`/nr-screenshot.png`}
-                        alt="Featured Project Screenshot"
-                        width="0"
-                        height="0"
-                        sizes="100vw"
-                        className="w-full h-auto rounded-md"
-                    />
-                    <Image
-                        src={`/nr-screenshot-2.png`}
-                        alt="Featured Project Screenshot"
-                        width="0"
-                        height="0"
-                        sizes="100vw"
-                        className="w-full h-auto rounded-md"
-                    />
+                <ImageModal
+                    src={`/nr-screenshot.png`}
+                    alt="Featured Project Screenshot"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="w-full h-auto rounded-md"
+                />
+                <ImageModal
+                    src={`/nr-screenshot-2.png`}
+                    alt="Featured Project Screenshot"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="w-full h-auto rounded-md"
+                />
             </div>
         </div>
     );

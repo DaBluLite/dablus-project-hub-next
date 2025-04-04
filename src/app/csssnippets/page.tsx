@@ -1,6 +1,6 @@
 import CopyButton from "@/components/CopyButton";
 import { GET as getCssSnippets } from "../api/csssnippets/route";
-import Image from "@/components/Image";
+import { ImageModal } from "@/components/ImageModal";
 
 export default async function Home() {
     const res = getCssSnippets();
@@ -10,7 +10,7 @@ export default async function Home() {
             <div className="flex gap-2 items-start pb-5 flex-col-reverse lg:flex-row">
                 <div className="flex flex-col gap-2 w-full">
                     {data.map(({ screenshot, name, description, import: im }, i) => <div key={i} className="w-full rounded-xl bg-primary-700 border border-primary-400/20 flex-col flex">
-                        {screenshot ? <Image
+                        {screenshot ? <ImageModal
                             className="rounded-t-xl w-full h-auto max-h-[500px] object-cover object-top"
                             src={screenshot}
                             alt="Featured Project Screenshot"

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImageModal } from "@/components/ImageModal";
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
                 </ul>
                 <h1 className="text-2xl">Screenshots (v8.5 Beta)</h1>
                 <div className="grid grid-cols-2 gap-2 w-full">
-                    <Image
+                    <ImageModal
                         src={`/dc/main-v8.5.png`}
                         alt="Featured Project Screenshot"
                         width="0"
@@ -28,7 +28,7 @@ export default function Home() {
                         sizes="100vw"
                         className="w-full h-auto rounded-md"
                     />
-                    <Image
+                    <ImageModal
                         src={`/dc/gs-v8.5.png`}
                         alt="Featured Project Screenshot"
                         width="0"
@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
                 <h1 className="text-2xl">Screenshots (v8)</h1>
                 <div className="grid grid-cols-2 gap-2 w-full">
-                    <Image
+                    <ImageModal
                         src={`/dc/main.png`}
                         alt="Featured Project Screenshot"
                         width="0"
@@ -47,7 +47,7 @@ export default function Home() {
                         sizes="100vw"
                         className="w-full h-auto rounded-md"
                     />
-                    <Image
+                    <ImageModal
                         src={`/dc/settings.png`}
                         alt="Featured Project Screenshot"
                         width="0"
@@ -55,7 +55,7 @@ export default function Home() {
                         sizes="100vw"
                         className="w-full h-auto rounded-md"
                     />
-                    <Image
+                    <ImageModal
                         src={`/dc/creator.png`}
                         alt="Featured Project Screenshot"
                         width="0"
