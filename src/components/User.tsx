@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { auth, signIn, signOut } from "@/auth";
 
 export default async function UserAvatar() {
