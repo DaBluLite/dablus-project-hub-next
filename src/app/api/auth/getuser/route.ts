@@ -23,7 +23,9 @@ export const POST = auth(async function POST(req) {
                 },
                 method: "POST",
             })
-            return NextResponse.json({ message: "Not authenticated" }, { status: 401 })
+            return NextResponse.json({ message: "Not authenticated" }, { status: 401 });
         }
+    } else {
+        return NextResponse.json({ message: "Invalid request body" }, { status: 401 });
     }
 })
