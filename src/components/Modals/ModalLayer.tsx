@@ -2,7 +2,7 @@
 import { Dispatcher, Parsers } from "@/api";
 import { Fragment, ReactNode, useEffect, useState } from "react";
 
-export default function () {
+export default function ModalLayer() {
     const [items, setItems] = useState<{ [key: string]: ReactNode; }>({});
 
     function closeModal({ id: iid }: { id?: string; }) {

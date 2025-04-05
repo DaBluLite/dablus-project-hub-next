@@ -1,7 +1,3 @@
-import * as $ExpressionParser from "@/api/Parsers/ExpressionsParser";
-
-export const ExpressionParser = $ExpressionParser;
-
 export const stringToHex = (str: string) => {
     let hex = "";
     for (
@@ -17,7 +13,7 @@ export const stringToHex = (str: string) => {
 };
 
 export function guidGenerator() {
-    var S4 = function () {
+    const S4 = function () {
         return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
     };
     return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
