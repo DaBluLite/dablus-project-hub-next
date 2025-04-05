@@ -11,6 +11,7 @@
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
+    "@next/eslint-plugin-next": "^15.2.4",
     "@next/mdx": "^15.2.1",
     "@types/flux": "^3.1.14",
     "classnames": "^2.5.1",
