@@ -30,15 +30,14 @@ export default function ColorishAuthPage({ username, image, callbackUrl }: { use
                         <div className="button button-primary" onClick={async () => {
                             setStatus("posting");
                             try {
-                                fetch(callbackUrl as string, {
+                                await fetch(callbackUrl as string, {
                                     body: JSON.stringify({ username, image, status: 200 }),
                                     headers: {
                                         "Content-Type": "application/json",
                                     },
                                     method: "POST"
-                                }).then(() => {
-                                    setStatus("success");
-                                })
+                                });
+                                setStatus("success");
                             } catch (e) {
                                 console.warn(e);
                                 console.warn("Colorish Client not authenticating currently");
