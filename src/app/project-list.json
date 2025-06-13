@@ -1,8 +1,9 @@
 [
     {
-        "image": "cyan2-screenshot-1.png",
-        "title": "Cyan 2",
-        "description": "Clean and Customizable, with custom background support",
+        "image": "cyan3-screenshot-1.png",
+        "icon": "cyan-icon.png",
+        "title": "Cyan",
+        "description": "Powerful UX, stunning visuals, like never before",
         "actions": [
             {
                 "text": "Learn More",
@@ -19,6 +20,7 @@
     },
     {
         "image": "project-colorway-banner.jpg",
+        "icon": "project-colorway-icon.png",
         "title": "Project Colorway",
         "description": "Vastly colorful. Color-only presets for apps and websites, with the goal of a colorful internet.",
         "actions": [
@@ -32,6 +34,7 @@
     },
     {
         "image": "nr-screenshot.png",
+        "icon": "nexus-icon.png",
         "title": "Nexus Remastered",
         "description": "The theme that never came to be, and predecessor to Cyan, remastered and better than before",
         "actions": [

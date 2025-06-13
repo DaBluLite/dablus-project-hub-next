@@ -63,7 +63,7 @@ export default function AboutPage() {
             <li className="list-disc">This website</li>
             <li className="list-disc"><Link href={"/colorways/discord"}>DiscordColorways</Link></li>
             <li className="list-disc"><Link href={"/colorways/manager"}>Colorish</Link></li>
-            <li className="list-disc"><Link href={"/cyan"}>Cyan 2</Link></li>
+            <li className="list-disc" data-note="TODO: change this to Cyan 3"><Link href={"/cyan"}>Cyan 2</Link></li>
             <li className="list-disc">???????????????</li>
         </ul>
     </div>

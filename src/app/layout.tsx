@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 import UserAvatar from "@/components/User";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import { ViewTransitions } from 'next-view-transitions'
@@ -45,7 +45,7 @@ export default function RootLayout({
                     <div className="pointer-events-none -mx-px h-4 w-px transition-all duration-200 select-none bg-primary-400/20" />
                   </div>
                   <div className="group relative flex h-full flex-row items-center justify-center text-sm focus:outline-0">
-                    <Link className="relative z-10 grid h-full place-content-center px-6 transition duration-100 focus:outline-none focus-visible:ring focus-visible:ring-cream-400 undefined" href="/cyan">Cyan 2</Link>
+                    <Link className="relative z-10 grid h-full place-content-center px-6 transition duration-100 focus:outline-none focus-visible:ring focus-visible:ring-cream-400 undefined" href="/cyan">Cyan</Link>
                     <div className="pointer-events-none -mx-px h-4 w-px transition-all duration-200 select-none bg-primary-400/20" />
                   </div>
                   <div className="group relative flex h-full flex-row items-center justify-center text-sm focus:outline-0">

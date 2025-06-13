@@ -1,5 +1,7 @@
 import { Link } from "next-view-transitions";
 
+export const dynamic = "force-static";
+
 export default function Home() {
     return (
         <div className="flex flex-col gap-2">

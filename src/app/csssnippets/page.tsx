@@ -11,6 +11,7 @@ export default async function Home() {
                 <div className="flex flex-col gap-2 w-full">
                     {data.map(({ screenshot, name, description, import: im }, i) => <div key={i} className="w-full rounded-xl bg-primary-700 border border-primary-400/20 flex-col flex">
                         {screenshot ? <ImageModal
+                            loader="static"
                             className="rounded-t-xl w-full h-auto max-h-[500px] object-cover object-top"
                             src={screenshot}
                             alt="Featured Project Screenshot"

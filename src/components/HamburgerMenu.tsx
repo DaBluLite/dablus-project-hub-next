@@ -18,7 +18,7 @@ export default function HamburgerMenu() {
             </MenuHandler>
             <MenuList className="!fixed !left-0 !top-0 z-40 rounded-none h-full bg-primary-900 border-none p-2 flex flex-col gap-2 justify-items-stretch shadow-primary-800 w-full justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <Link href="/" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Home</Link>
-                <Link href="/cyan" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Cyan 2</Link>
+                <Link href="/cyan" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Cyan</Link>
                 <Link href="/nexus" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Nexus Remastered</Link>
                 <Link href="/colorways" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Project Colorway</Link>
                 <Link href="/csssnippets" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">CSS Snippets</Link>
