@@ -1,29 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import { auth, signIn, signOut } from "@/auth";
+"use client";
 
-export default async function UserAvatar() {
-    const session = await auth()
+import { useSession, signIn, signOut } from "next-auth/react";
+import Spinner from "./Spinner";
 
-    if (!session?.user) return <form
-        action={async () => {
-            "use server"
-            await signIn("discord")
-        }}
-    >
-        <button type="submit" className="button button-accent">Login</button>
-    </form>
+export default function UserAvatar() {
+    const { data: session } = useSession()
+
+    if (!session) return <Spinner className="!size-6"/>;
+
+    if (!session?.user) return <button type="submit" className="button button-accent" onClick={() => signIn("discord")}>Login</button>
 
     return (
         <>
             <img width={32} height={32} className="rounded-md border border-primary-400/20" src={session.user.image as string} alt="User Avatar" />
-            <form
-                action={async () => {
-                    "use server"
-                    await signOut()
-                }}
-            >
-                <button type="submit" className="button button-primary">Logout</button>
-            </form>
+            <button type="submit" className="button button-primary" onClick={() => signOut()}>Logout</button>
         </>
     )
 }

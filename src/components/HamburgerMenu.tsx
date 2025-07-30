@@ -21,7 +21,6 @@ export default function HamburgerMenu() {
                 <Link href="/cyan" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Cyan</Link>
                 <Link href="/nexus" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Nexus Remastered</Link>
                 <Link href="/colorways" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Project Colorway</Link>
-                <Link href="/csssnippets" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">CSS Snippets</Link>
                 <Link href="/blog" className="border border-transparent hover:border-primary-400/20 outline-none hover:bg-primary-700 transition p-4 rounded-xl">Blog</Link>
             </MenuList>
         </Menu>

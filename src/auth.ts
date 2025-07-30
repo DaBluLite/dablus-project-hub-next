@@ -13,11 +13,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           image: `https://cdn.discordapp.com/avatars/${profile.id}/${profile.avatar}.${profile.avatar.startsWith("a_") ? "gif" : "webp"}`
         };
       },
-    })
+    }),
   ],
   callbacks: {
     jwt({ token, user }) {
-      if (user) { // User is available during sign-in
+      if (user) {
         token.id = user.id
       }
       return token
