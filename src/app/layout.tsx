@@ -42,7 +42,7 @@ export default function RootLayout({
                   <div className="flex lg:hidden items-center h-full">
                     <h1 className="select-none tracking-wide">DaBluLite&apos;s Project Hub</h1>
                   </div>
-                  <div className="absolute top-2 left-1/2 -translate-x-1/2 justify-self-center h-full flex-1 flex-row items-center justify-center text-sm select-none hidden lg:flex">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 justify-self-center h-full flex-1 flex-row items-center justify-center text-sm select-none hidden lg:flex">
                     <ProjectsContextMenu/>
                     <div className="group relative flex h-full flex-row items-center justify-center text-sm focus:outline-0">
                       <Link className="relative z-10 grid h-full place-content-center px-6 transition duration-100 focus:outline-none focus-visible:ring focus-visible:ring-cream-400 undefined" href="/about">About Me</Link>

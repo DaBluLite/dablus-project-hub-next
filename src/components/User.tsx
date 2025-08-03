@@ -2,12 +2,9 @@
 "use client";
 
 import { useSession, signIn, signOut } from "next-auth/react";
-import Spinner from "./Spinner";
 
 export default function UserAvatar() {
     const { data: session } = useSession()
-
-    if (!session) return <Spinner className="!size-6"/>;
 
     if (!session?.user) return <button type="submit" className="button button-accent" onClick={() => signIn("discord")}>Login</button>
 

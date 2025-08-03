@@ -19,28 +19,28 @@
         ]
     },
     {
-        "image": "project-colorway-banner.jpg",
-        "icon": "project-colorway-icon.png",
-        "title": "Project Colorway",
-        "description": "Vastly colorful. Color-only presets for apps and websites, with the goal of a colorful internet.",
+        "image": "colorish-screenshot-1.png",
+        "icon": "colorish-icon.png",
+        "title": "Colorish",
+        "description": "The official manager for all Colorways-compatible apps",
         "actions": [
             {
                 "text": "Learn More",
-                "href": "/colorways",
+                "href": "/colorish",
                 "color": "accent",
                 "internal": true
             }
         ]
     },
     {
-        "image": "nr-screenshot.png",
-        "icon": "nexus-icon.png",
-        "title": "Nexus Remastered",
-        "description": "The theme that never came to be, and predecessor to Cyan, remastered and better than before",
+        "image": "dc/banner.png",
+        "icon": "colorish-icon.png",
+        "title": "DiscordColorways",
+        "description": "The official plugin that offers easy access to Colorways and all of their features.",
         "actions": [
             {
                 "text": "Learn More",
-                "href": "/nexus",
+                "href": "/discordcolorways",
                 "color": "accent",
                 "internal": true
             }

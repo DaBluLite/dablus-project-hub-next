@@ -1,18 +1,14 @@
 {
-    "image": "cyan3-screenshot-1.png",
-    "title": "Cyan",
-    "description": "Powerful UX, stunning visuals, like never before",
+    "image": "manager/main-v2.png",
+    "icon": "colorish-icon.png",
+    "title": "Colorish",
+    "description": "The official manager for all Colorways-compatible apps",
     "actions": [
         {
             "text": "Learn More",
-            "href": "/cyan",
+            "href": "/colorish",
             "color": "accent",
             "internal": true
-        },
-        {
-            "text": "Get it on BetterDiscord",
-            "href": "https://betterdiscord.app/theme/Cyan",
-            "color": "primary"
         }
     ]
 }

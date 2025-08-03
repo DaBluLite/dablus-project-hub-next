@@ -10,7 +10,7 @@ export default function Home() {
                 <a className="button button-accent text-center" href="https://github.com/DaBluLite/DiscordColorways-VencordUserplugin/" >Download for Vencord</a>
                 <a className="button button-primary text-center" href="https://github.com/DaBluLite/DiscordColorways/raw/refs/heads/master/DiscordColorways.plugin.js" >Download for BetterDiscord</a>
             </div>
-            <span className="text-pretty select-none mb-4">DiscordColorways is the official plugin that offers easy access to Project Colorway and all of its features.</span>
+            <span className="text-pretty select-none mb-4">DiscordColorways is the official plugin that offers easy access to Colorways and all of their features.</span>
             <div className="flex flex-col gap-2 w-full p-3 rounded-xl bg-primary-800 border border-primary-400/20 select-none">
                 <h1 className="text-2xl">Features</h1>
                 <ul className="flex gap-2 flex-col pl-4">
@@ -18,7 +18,7 @@ export default function Home() {
                     <li className="list-disc">All Colorway and Preset sources in the official source repository.</li>
                     <li className="list-disc">Access to presets and colorway themes.</li>
                     <li className="list-disc">Robust colorway, preset and source creators.</li>
-                    <li className="list-disc">Compatibility with Project Colorway managers, designed with Colorish in mind.</li>
+                    <li className="list-disc">Compatibility with Colorways managers, designed with Colorish in mind.</li>
                 </ul>
                 <h1 className="text-2xl">Screenshots (v8.5 Beta)</h1>
                 <div className="grid grid-cols-2 gap-2 w-full">
