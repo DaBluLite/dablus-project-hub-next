@@ -35,7 +35,7 @@ export default function ProjectsContextMenu() {
                         setTimeout(() => {
                             if (!mouseInButton && !mouseInMenu) Dispatcher.emit("CLOSE_CONTEXT_MENU", {});
                         }, 200);
-                    }} className={`rounded-lg border border-primary-400/20 bg-primary-900/70 backdrop-blur-md animate-ttb dc-contextmenu overflow-auto no-scrollbar !fixed px-2 left-1/2 justify-center p-2 flex gap-2 w-fit -translate-x-1/2`} onClick={e => e.stopPropagation()} style={{
+                    }} className={`rounded-2xl border border-primary-400/20 bg-white backdrop-blur-md animate-ttb dc-contextmenu overflow-auto no-scrollbar !fixed px-2 left-1/2 justify-center p-2 flex gap-2 w-fit -translate-x-1/2 shadow-md shadow-primary-700/20`} onClick={e => e.stopPropagation()} style={{
                         top: `${yPos === "bottom" ? pos.y + cont.current.offsetHeight + 8 : window.innerHeight - pos.y - cont.current.offsetHeight - 8}px`,
                         maxHeight: `calc(100vh - 4px - ${yPos === "bottom" ? pos.y + cont.current.offsetHeight + 8 : window.innerHeight - pos.y - cont.current.offsetHeight - 8}px)`
                     }}>
@@ -45,14 +45,14 @@ export default function ProjectsContextMenu() {
                                     setMouseInButton(false);
                                     setMouseInMenu(false);
                                     Dispatcher.emit("CLOSE_CONTEXT_MENU", {});
-                                }} key={i} className="dc-contextmenu-item flex flex-col hover:bg-primary-600/60 transition duration-200 ease-in-out px-5 py-3 rounded-md border border-transparent hover:border-primary-400/20" href={proj.actions[0].href} onMouseEnter={() => setCurrentProj(proj)}>{proj.title}</Link>
+                                }} key={i} className="dc-contextmenu-item flex flex-col hover:bg-primary-100/60 transition duration-200 ease-in-out px-5 py-3 rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20" href={proj.actions[0].href} onMouseEnter={() => setCurrentProj(proj)}>{proj.title}</Link>
                             })}
                         </div>
                         <Link href={currentProj.actions[0].href} onClick={() => {
                             setMouseInButton(false);
                             setMouseInMenu(false);
                             Dispatcher.emit("CLOSE_CONTEXT_MENU", {});
-                        }} className="w-[512px] rounded-xl bg-primary-700 flex-col flex border border-primary-400/20">
+                        }} className="w-[512px] rounded-xl flex-col flex shadow-md shadow-primary-700/20">
                             <Image
                                 className="rounded-t-xl !w-full !h-auto max-h-60 object-cover object-center"
                                 src={`/${currentProj.image}`}
@@ -63,7 +63,7 @@ export default function ProjectsContextMenu() {
                             />
                             <div className="flex flex-col gap-2 p-5 select-none justify-end h-full relative pt-8">
                                 <Image
-                                    className="rounded-2xl absolute -top-8 left-4 border-3 border-primary-700"
+                                    className="rounded-2xl absolute -top-8 left-4 border-3 border-white"
                                     src={`/${currentProj.icon}`}
                                     alt="Project Icon"
                                     width={64}

@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export default function Home() {
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-w-[70rem] mx-auto w-full">
             <div className="flex gap-4 items-center">
                 <h1 className="text-4xl my-4">Colorish</h1>
                 <a className="button button-accent relative" href="https://github.com/ProjectColorway/colorish/releases/tag/v2.0.0">
@@ -15,7 +15,7 @@ export default function Home() {
                 </a>
             </div>
             <span className="mb-4 text-pretty">The official manager for Colorways-compatible apps.</span>
-            <div className="flex flex-col gap-4 w-full p-3 rounded-xl bg-primary-800 border border-primary-400/20">
+            <div className="flex flex-col gap-4 w-full p-5 rounded-xl bg-white shadow-xl shadow-primary-700/20">
                 <h1 className="text-2xl">Features</h1>
                 <ul className="flex gap-2 flex-col pl-4">
                     <li className="list-disc">Real-time management of all your colorways for all apps from one place</li>

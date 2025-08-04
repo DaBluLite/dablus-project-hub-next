@@ -4,14 +4,14 @@ export const dynamic = "force-static";
 
 export default function Home() {
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-w-[70rem] mx-auto w-full">
             <div className="flex gap-4 items-center">
                 <h1 className="text-4xl my-4">DiscordColorways</h1>
                 <a className="button button-accent text-center" href="https://github.com/DaBluLite/DiscordColorways-VencordUserplugin/" >Download for Vencord</a>
                 <a className="button button-primary text-center" href="https://github.com/DaBluLite/DiscordColorways/raw/refs/heads/master/DiscordColorways.plugin.js" >Download for BetterDiscord</a>
             </div>
             <span className="text-pretty select-none mb-4">DiscordColorways is the official plugin that offers easy access to Colorways and all of their features.</span>
-            <div className="flex flex-col gap-2 w-full p-3 rounded-xl bg-primary-800 border border-primary-400/20 select-none">
+            <div className="flex flex-col gap-4 w-full p-5 rounded-xl bg-white shadow-xl shadow-primary-700/20">
                 <h1 className="text-2xl">Features</h1>
                 <ul className="flex gap-2 flex-col pl-4">
                     <li className="list-disc">An Easy-to-use interface</li>

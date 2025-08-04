@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 
 export default function Home() {
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-w-[70rem] mx-auto w-full">
             <div className="flex gap-4 items-center">
                 <h1 className="text-4xl my-4">Cyan</h1>
                 <DownloadBtn/>

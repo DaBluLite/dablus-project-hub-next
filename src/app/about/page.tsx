@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { Link } from "next-view-transitions";
 import Image from "next/image";
 
 export default function AboutPage() {
     return <div className="flex flex-col gap-4 select-none">
-        <div className="flex flex-col rounded-xl border border-primary-400/20 bg-primary-800 w-full">
+        <div className="flex flex-col rounded-2xl shadow shadow-primary-700/20 bg-white w-full">
             <Image src={"/10.1.2025.png"} width={1920} height={120} quality={100} className="object-center object-cover rounded-t-xl" alt="dablulite banner" />
-            <div className="flex items-center justify-between p-4">
+            <div className="flex items-center justify-between p-4 relative">
+                <div className="w-full h-10 bg-gradient-to-t from-white to-transparent -mt-10 absolute top-0 left-0"/>
                 <div className="flex gap-4 items-center">
                     <img className="w-20 h-20 rounded-full" src="https://avatars.githubusercontent.com/u/73998678" alt="dablulite profile picture" />
                     <h1 className="text-xl">DaBluLite</h1>
@@ -61,9 +61,6 @@ export default function AboutPage() {
         <span className="text-2xl">My currently active projects are:</span>
         <ul className="flex gap-2 flex-col pl-4">
             <li className="list-disc">This website</li>
-            <li className="list-disc"><Link href={"/colorways/discord"}>DiscordColorways</Link></li>
-            <li className="list-disc"><Link href={"/colorways/manager"}>Colorish</Link></li>
-            <li className="list-disc" data-note="TODO: change this to Cyan 3"><Link href={"/cyan"}>Cyan 2</Link></li>
             <li className="list-disc">???????????????</li>
         </ul>
     </div>

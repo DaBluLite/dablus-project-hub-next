@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export default function Home() {
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-w-[70rem] mx-auto">
             <div className="flex gap-4 items-center">
                 <h1 className="text-4xl my-4">Project Colorway</h1>
                 <a href="https://github.com/ProjectColorway" target="_blank" className="button button-primary">GitHub</a>
