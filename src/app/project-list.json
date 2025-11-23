@@ -7,7 +7,7 @@
         "actions": [
             {
                 "text": "Learn More",
-                "href": "/cyan",
+                "href": "/projects/cyan",
                 "color": "accent",
                 "internal": true
             },
@@ -26,7 +26,7 @@
         "actions": [
             {
                 "text": "Learn More",
-                "href": "/colorish",
+                "href": "/projects/colorish",
                 "color": "accent",
                 "internal": true
             }
@@ -40,7 +40,7 @@
         "actions": [
             {
                 "text": "Learn More",
-                "href": "/discordcolorways",
+                "href": "/projects/discordcolorways",
                 "color": "accent",
                 "internal": true
             }

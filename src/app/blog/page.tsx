@@ -11,7 +11,7 @@ export default async function Index() {
     const morePosts = allPosts.slice(1);
 
     return (
-        <main>
+        <main className="text-black dark:text-white">
             <Container>
                 <section className="flex-col md:flex-row flex items-center md:justify-between my-4 select-none">
                     <h1 className="text-2xl font-bold tracking-tighter leading-tight md:pr-8">

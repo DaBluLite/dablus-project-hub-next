@@ -7,11 +7,11 @@ export default function Home() {
     return (
         <div className="flex flex-col gap-2 max-w-[70rem] mx-auto w-full">
             <div className="flex gap-4 items-center">
-                <h1 className="text-4xl my-4">Cyan</h1>
+                <h1 className="text-4xl my-4 text-black dark:text-white">Cyan</h1>
                 <DownloadBtn/>
                 <a href="https://betterdiscord.app/theme/Cyan" className="button button-primary">Find it on BetterDiscord</a>
             </div>
-            <span className="mb-4 text-pretty">A theme that aims to re-imagine the Discord User Experience in the most drastic
+            <span className="mb-4 text-pretty text-black dark:text-white">A theme that aims to re-imagine the Discord User Experience in the most drastic
                 way possible. Powerful UX, paired with stunning visuals and vast amounts of customizability, like never before.</span>
             <div className="grid grid-cols-2 gap-2 w-full">
                 <ImageModal

@@ -11,6 +11,9 @@ importers:
       '@emotion/memoize':
         specifier: ^0.9.0
         version: 0.9.0
+      '@mdi/react':
+        specifier: ^1.6.1
+        version: 1.6.1
       '@mdx-js/loader':
         specifier: ^3.1.0
         version: 3.1.0(acorn@8.14.0)(webpack@5.98.0)
@@ -23,6 +26,9 @@ importers:
       '@next/mdx':
         specifier: ^15.2.1
         version: 15.2.1(@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.98.0))(@mdx-js/react@3.1.0(@types/react@19.0.2)(react@19.0.0))
+      '@nine-thirty-five/material-symbols-react':
+        specifier: ^1.23.0
+        version: 1.23.0(react@19.0.0)
       '@types/flux':
         specifier: ^3.1.14
         version: 3.1.14
@@ -79,10 +85,10 @@ importers:
         specifier: ^20
         version: 20.17.11
       '@types/react':
-        specifier: ^19
+        specifier: ^19.0.2
         version: 19.0.2
       '@types/react-dom':
-        specifier: ^19
+        specifier: ^19.0.2
         version: 19.0.2(@types/react@19.0.2)
       discord.js:
         specifier: ^14.18.0
@@ -385,6 +391,9 @@ packages:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
 
+  '@mdi/react@1.6.1':
+    resolution: {integrity: sha512-4qZeDcluDFGFTWkHs86VOlHkm6gnKaMql13/gpIcUQ8kzxHgpj31NuCkD8abECVfbULJ3shc7Yt4HJ6Wu6SN4w==}
+
   '@mdx-js/loader@3.1.0':
     resolution: {integrity: sha512-xU/lwKdOyfXtQGqn3VnJjlDrmKXEvMi1mgYxVmukEUtVycIz1nh7oQ40bKTd4cA7rLStqu0740pnhGYxGoqsCg==}
     peerDependencies:
@@ -487,6 +496,11 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
+
+  '@nine-thirty-five/material-symbols-react@1.23.0':
+    resolution: {integrity: sha512-9jwcCWpwzEYEBcFqMQWt4RLDDidFSczQVY2FH8ocb0T9ECKOUuaW/P6T3Sm07Gm2C7NTxiJJLaz4LtZmMODjEQ==}
+    peerDependencies:
+      react: '>=18.2.0'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2904,6 +2918,10 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
       tailwind-merge: 1.8.1
 
+  '@mdi/react@1.6.1':
+    dependencies:
+      prop-types: 15.8.1
+
   '@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.98.0)':
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
@@ -3025,6 +3043,10 @@ snapshots:
 
   '@next/swc-win32-x64-msvc@15.1.3':
     optional: true
+
+  '@nine-thirty-five/material-symbols-react@1.23.0(react@19.0.0)':
+    dependencies:
+      react: 19.0.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:

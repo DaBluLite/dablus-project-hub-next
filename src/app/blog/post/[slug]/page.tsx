@@ -27,7 +27,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const { metadata } = await getBlogPostMetadata(slug);
   const BlogMarkdown = dynamic(() => import("@/_posts/" + slug + ".mdx"));
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 text-black dark:text-white">
       <Header />
       <PostHeader slug={slug} title={metadata.title} coverImage={metadata.coverImage} date={metadata.date} author={metadata.author} />
       <div className="max-w-2xl mx-auto">

@@ -4,7 +4,7 @@
 import Form from 'next/form';
 import { useLayoutEffect, useRef, useState } from "react";
 import { HexColorPicker } from "react-colorful";
-import { submitColorway, submitSource } from '@/app/colorways/submit/actions';
+import { submitColorway, submitSource } from '@/app/projects/colorways/submit/actions';
 import { Dispatcher } from '@/api';
 
 export default function SubmitPage() {

@@ -16,19 +16,16 @@ export default function HamburgerMenu() {
             }}
         >
             <MenuHandler>
-                <div className="justify-center items-center flex lg:!hidden cursor-pointer size-8 button button-icon button-primary">
+                <div className="bg-white/60 dark:bg-accent-800/20 hover:bg-primary-50/60 dark:hover:bg-accent-800/60 flex lg:hidden items-center gap-2 p-3 rounded-full cursor-pointer border-1/2 border-primary-700/20 dark:border-accent-700/20 shadow-sm shadow-primary-700/10 dark:shadow-black/10 md:border transition-colors text-black dark:text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 </div>
             </MenuHandler>
-            <MenuList className="!fixed !left-0 !top-0 z-40 m-2 h-fit rounded-2xl rounded-t-3xl shadow-2xl shadow-primary-700 bg-primary-100 border-none p-2 flex flex-col gap-2 justify-items-stretch w-[calc(100%-theme(space.4))] pt-20" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <Link href="/" className="rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20 outline-none hover:bg-white transition p-4">Home</Link>
-                <Link href="/cyan" className="rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20 outline-none hover:bg-white transition p-4">Cyan</Link>
-                <Link href="/colorish" className="rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20 outline-none hover:bg-white transition p-4">Colorish</Link>
-                <Link href="/discordcolorways" className="rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20 outline-none hover:bg-white transition p-4">DiscordColorways</Link>
-                <Link href="/about" className="rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20 outline-none hover:bg-white transition p-4">About Me</Link>
-                <Link href="/blog" className="rounded-xl shadow-md shadow-transparent hover:shadow-primary-700/20 outline-none hover:bg-white transition p-4">Blog</Link>
+            <MenuList className="!fixed !left-0 !top-0 z-40 m-2 mt-15 h-fit rounded-xl shadow-2xl shadow-primary-700 bg-white/60 backdrop-blur-lg dark:bg-accent-800/20 border-none p-1 flex flex-col gap-2 justify-items-stretch w-fit border border-white/20 dark:border-accent-700/20" placeholder={() => {}} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+                <Link href="/" className="hamburger-item">Home</Link>
+                <Link href="/projects" className="hamburger-item">Projects</Link>
+                <Link href="/blog" className="hamburger-item">Blog</Link>
             </MenuList>
         </Menu>
     );

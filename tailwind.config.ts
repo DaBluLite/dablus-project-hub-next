@@ -1,7 +1,9 @@
 import type { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate";
+import tailwindViewTransitions from "tailwindcss-view-transitions";
 
 const config = {
-	darkMode: "media",
+	darkMode: "class",
 	content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
 	prefix: "",
 	theme: {
@@ -82,8 +84,8 @@ const config = {
 		},
 	},
 	plugins: [
-		require("tailwindcss-animate"),
-		require("tailwindcss-view-transitions")
+		tailwindAnimate,
+		tailwindViewTransitions
 	],
 } satisfies Config;
 
