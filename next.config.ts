@@ -1,28 +1,29 @@
 import createMDX from "@next/mdx";
+import { NextConfig } from "next";
+import rehypeHighlight from "rehype-highlight";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'github.com',
-        port: '',
-        pathname: '/**',
-        search: '',
+        protocol: "https",
+        hostname: "github.com",
+        port: "",
+        pathname: "/**",
+        search: "",
       },
     ],
   },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.node/,
-      use: 'node-loader'
-    })
+      use: "node-loader",
+    });
 
-    return config
+    return config;
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
-  serverExternalPackages: ['remark-prism'],
+  serverExternalPackages: ["remark-prism"],
   async headers() {
     return [
       {
@@ -30,20 +31,25 @@ const nextConfig = {
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
-          { key: "Access-Control-Allow-Methods", value: "GET,DELETE,PATCH,POST,PUT,OPTIONS" },
-          { key: "Access-Control-Allow-Headers", value: "Accept, Accept-Version, Content-Length, Content-Type, Authorization" },
-        ]
-      }
-    ]
-  }
+          {
+            key: "Access-Control-Allow-Methods",
+            value: "GET,DELETE,PATCH,POST,PUT,OPTIONS",
+          },
+          {
+            key: "Access-Control-Allow-Headers",
+            value:
+              "Accept, Accept-Version, Content-Length, Content-Type, Authorization",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
   options: {
-    rehypePlugins: [
-      ['rehype-highlight']
-    ],
+    rehypePlugins: [rehypeHighlight],
   },
 });
 
