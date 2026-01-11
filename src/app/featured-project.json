@@ -1,14 +1,14 @@
 {
-    "image": "manager/main-v2.png",
-    "icon": "colorish-icon.png",
-    "title": "Colorish",
-    "description": "The official manager for all Colorways-compatible apps",
+    "image": "sway/banner.png",
+    "icon": "sway-logo.png",
+    "title": "Sway FM",
+    "description": "A new way to listen to radio stations worldwide.",
     "actions": [
         {
-            "text": "Learn More",
-            "href": "/colorish",
+            "text": "Open Sway",
+            "href": "https://sway.dablulite.dev",
             "color": "accent",
-            "internal": true
+            "internal": false
         }
     ]
 }

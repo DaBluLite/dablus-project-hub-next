@@ -1,47 +1,20 @@
 [
     {
-        "image": "cyan3-screenshot-1.png",
-        "icon": "cyan-icon.png",
-        "title": "Cyan",
-        "description": "Powerful UX, stunning visuals, like never before",
+        "image": "sway/banner.png",
+        "icon": "sway-logo.png",
+        "title": "Sway FM",
+        "description": "A new way to listen to radio stations worldwide.",
         "actions": [
             {
-                "text": "Learn More",
-                "href": "/projects/cyan",
+                "text": "Open Sway",
+                "href": "https://sway.dablulite.dev",
                 "color": "accent",
-                "internal": true
+                "internal": false
             },
             {
-                "text": "Get it on BetterDiscord",
-                "href": "https://betterdiscord.app/theme/Cyan",
-                "color": "primary"
-            }
-        ]
-    },
-    {
-        "image": "colorish-screenshot-1.png",
-        "icon": "colorish-icon.png",
-        "title": "Colorish",
-        "description": "The official manager for all Colorways-compatible apps",
-        "actions": [
-            {
                 "text": "Learn More",
-                "href": "/projects/colorish",
-                "color": "accent",
-                "internal": true
-            }
-        ]
-    },
-    {
-        "image": "dc/banner.png",
-        "icon": "colorish-icon.png",
-        "title": "DiscordColorways",
-        "description": "The official plugin that offers easy access to Colorways and all of their features.",
-        "actions": [
-            {
-                "text": "Learn More",
-                "href": "/projects/discordcolorways",
-                "color": "accent",
+                "href": "/sway",
+                "color": "primary",
                 "internal": true
             }
         ]
