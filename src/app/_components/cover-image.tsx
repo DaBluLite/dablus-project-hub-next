@@ -18,7 +18,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-xl shadow-primary-700/20 w-full rounded-xl")}
+      className={cn("shadow-xl shadow-primary-700/20 w-full rounded-2xl")}
       style={{
         viewTransitionName: kebabCase(slug)
       }}

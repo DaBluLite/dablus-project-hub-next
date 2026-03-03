@@ -9,8 +9,8 @@ export const dynamic = "force-static";
 export default function Home() {
   return (
     <>
-      <section className="h-[calc(100vh-88px)] flex items-center justify-center text-black dark:text-white relative w-full">
-        <div className="flex items-center gap-8 px-5">
+      <section className="h-screen flex items-center justify-center text-black dark:text-white relative w-full">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 px-5">
           <img className="w-20 h-20 rounded-full" src="https://avatars.githubusercontent.com/u/73998678" alt="dablulite profile picture" />
           <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-bold">Hello, I&apos;m DaBluLite</h1>

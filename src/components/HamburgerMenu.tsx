@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function HamburgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function HamburgerMenu() {
         <div ref={menuRef} className="relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-white/60 dark:bg-accent-800/20 hover:bg-primary-50/60 dark:hover:bg-accent-800/60 flex lg:hidden items-center gap-2 p-3 rounded-full cursor-pointer border-1/2 border-primary-700/20 dark:border-accent-700/20 shadow-sm shadow-primary-700/10 dark:shadow-black/10 md:border transition-colors text-black dark:text-white"
+                className="bg-white/60 dark:bg-accent-800/20 backdrop-blur-lg hover:bg-primary-50/60 dark:hover:bg-accent-800/60 flex items-center gap-2 p-3 rounded-full cursor-pointer shadow-2xl shadow-primary-700/20 transition-colors text-black dark:text-white"
                 aria-label="Toggle menu"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -37,14 +38,23 @@ export default function HamburgerMenu() {
 
             {isOpen && (
                 <div
-                    className="fixed left-0 top-0 z-40 m-2 mt-15 h-fit rounded-xl shadow-2xl shadow-primary-700 bg-white/60 backdrop-blur-lg dark:bg-accent-800/20 p-1 flex flex-col gap-2 justify-items-stretch w-fit border border-white/20 dark:border-accent-700/20"
+                    className="fixed left-0 bottom-0 z-40 m-2 mb-20 h-fit rounded-2xl shadow-2xl shadow-primary-700/20 bg-white/60 backdrop-blur-lg dark:bg-accent-800/20 p-3 flex flex-col gap-3 justify-items-stretch w-fit border border-white/20 dark:border-accent-700/20"
                     style={{
                         animation: 'hamburger-menu-mount 0.2s ease-out'
                     }}
                 >
-                    <Link href="/" className="hamburger-item" onClick={() => setIsOpen(false)}>Home</Link>
-                    <Link href="/projects" className="hamburger-item" onClick={() => setIsOpen(false)}>Projects</Link>
-                    <Link href="/blog" className="hamburger-item" onClick={() => setIsOpen(false)}>Blog</Link>
+                    <Link href="/" className="hamburger-item" onClick={() => setIsOpen(false)}>
+                        <span className="hamburger-item-title">Home</span>
+                    </Link>
+                    <Link href="/projects" className="hamburger-item" onClick={() => setIsOpen(false)}>
+                        <span className="hamburger-item-title">Projects</span>
+                    </Link>
+                    <Link href="/blog" className="hamburger-item" onClick={() => setIsOpen(false)}>
+                        <span className="hamburger-item-title">Blog</span>
+                    </Link>
+                    <div className="flex justify-end gap-3">
+                        <ThemeToggle />
+                    </div>
                 </div>
             )}
         </div>
